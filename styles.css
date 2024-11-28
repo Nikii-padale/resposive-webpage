@@ -28,6 +28,7 @@ h1 {
     background-color: #f8f9fa; /* Light gray */
     text-align: center;
     box-sizing: border-box;
+    margin-top: 30px; /* Ensure some space for titles */
 }
 
 /* Section Title Styles */
@@ -66,3 +67,8 @@ h1 {
         width: 100%; /* Full width for each section */
     }
 }
+
+  
+   
+
+    
