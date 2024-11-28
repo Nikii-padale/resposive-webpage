@@ -18,6 +18,7 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
+    justify-content: space-between;  /* Ensure proper alignment */
 }
 
 /* Individual Section Styles */
@@ -28,7 +29,9 @@ h1 {
     background-color: #f8f9fa; /* Light gray */
     text-align: center;
     box-sizing: border-box;
-    margin-top: 30px; /* Ensure some space for titles */
+    flex: 1 1 calc(33.333% - 20px); /* Make the sections flexible */
+    min-height: 200px; /* Add a min height to avoid collapsing */
+    padding-top: 40px; /* Give space for title */
 }
 
 /* Section Title Styles */
@@ -41,10 +44,14 @@ h1 {
     border: 1px solid black;
     font-weight: bold;
     font-size: 1.1em;
+    z-index: 10; /* Ensure title stays on top */
 }
 
 /* Desktop View (992px and above) */
 @media (min-width: 992px) {
+    .container {
+        flex-direction: row;  /* Make sure it stays in a row */
+    }
     .section {
         width: calc(33.333% - 20px); /* Three equal sections */
     }
@@ -68,7 +75,6 @@ h1 {
     }
 }
 
-  
-   
-
     
+
+  
